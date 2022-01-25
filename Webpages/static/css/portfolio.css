@@ -1,0 +1,102 @@
+/* NAVBAR */
+.nav-link-heading{
+    font-weight: 700;
+    font-size: large;
+    margin-left: 18px;
+    margin-right: 18px;
+    letter-spacing: 0.05em;
+}
+
+.dropdown-item-heading{
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: medium;
+    text-align: right;
+}
+
+.nav-bar-name{
+    font-family: Millenia;
+    margin-left:15px; 
+    font-size: xx-large;
+    font-weight: 1000;
+    letter-spacing: 0.05em;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+
+/* EACH CONTAINER */
+.outmost-container{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section-game{
+    background-image: url("../Images/games_icon.jpg");
+}
+
+#section-app{
+    background-image: url("../Images/apps_icon.jpg");
+}
+
+#section-website{
+    background-image: url("../Images/websites_icon.jpg");
+}
+
+.section-heading{
+    font-family: Poppins;
+    text-decoration: underline;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.section-heading-div{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+/* STYLE FOR EACH CARD */
+.row{
+    width: 100%;
+    padding: 1em;
+}
+
+.card{
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(180,179,179,1) 100%);
+}
+
+.project-name{
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Open_sans;
+    src: url("../Fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf");
+}
+@font-face {
+    font-family: Open_sans_condensed;
+    src: url("../Fonts/Open_Sans/static/OpenSans_Condensed/OpenSans_Condensed-Medium.ttf");
+}
+@font-face {
+    font-family: Arvo;
+    src: url("../Fonts/Arvo/Arvo-Bold.ttf");
+}
+@font-face {
+    font-family: Millenia;
+    src: url("../Fonts/Millenia-Font/MilleniaPersonalUse-w1OB8.ttf");
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../Fonts/Poppins/Poppins-Medium.ttf");
+}
