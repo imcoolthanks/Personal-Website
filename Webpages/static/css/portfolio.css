@@ -63,12 +63,42 @@
 }
 
 /* STYLE FOR EACH CARD */
+/*Carousel */
+.sr-only{ 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.carousel-control-prev {
+    margin-left: -1.5em;
+  }
+  
+.carousel-control-next {
+    margin-right: -1.5em;
+}
+
+.carousel-inner{
+    padding: 1.5em;   
+}
+
+.carousel-inner img{
+    border-radius: 0.5em;
+}
+
+/* Cards */
 .row{
     width: 100%;
     padding: 1em;
 }
 
 .card{
+    border-radius: 1em;
     width: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(180,179,179,1) 100%);
