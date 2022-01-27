@@ -1,171 +1,96 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "base.html" %}
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css')}}">
+{% block title %}
+Queena's Portfolio
+{% endblock %}
 
-    <title>Queena's Portofolio</title>
-  </head>
-  <body>
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css')}}">
+{% endblock %}
 
-    <!-- NAVBAR -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="padding-bottom: 0;">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand nav-bar-name" href="#">&lt;queen/&gt;</a>
-        </div>
-
-        <ul class="nav navbar-nav nav-right mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link-heading nav-link" href="#section-Home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link-heading nav-link" href="#section-About">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-link-heading dropdown-toggle" style="margin-right: 0%;" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div class="dropdown-menu dropdown-item-heading" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/portfolio#section-game">Games</a>
-              <a class="dropdown-item" href="/portfolio#section-app">Applications</a>
-              <a class="dropdown-item" href="/portfolio#section-website">Websites</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link-heading nav-link" href="#section-Contact">Contact</a>
-          </li>
-        </ul>
-        
-      </div>
-    </nav>
-    <!-- END OF NAVBAR -->
-
-    <!-- COVER -->
-    <div id="section-Home" class="cover_bg_img bg-image d-flex justify-content-center align-item-center" >    
-      <div class="row align-self-center w-100">
-        <div class="jumbotron text-center">
-          <h1 class="text-white" style="font-size: 100px; letter-spacing: 0.3em; padding-bottom: 0;">Queena</h1>
-          <hr style="color: white; width: 100%;height: 3px; opacity: 100%; padding: 0; margin:0;">
-          <hr style="color: lightgray; width: 100%;height: 2px; opacity: 70%; padding: 0; margin:0;">
-          <p style="color: white; font-weight: 500; letter-spacing: 0.1em;">Programmer | Tech enthusiast | Game Creator</p>
-          <section id="scroll-down">
-            <a href="#section-About"><span></span></a>
-          </section>
-        </div>
-      </div>
+{% block content %}
+<!-- COVER -->
+<div id="section-Home" class="cover_bg_img bg-image d-flex justify-content-center align-item-center" >    
+  <div class="row align-self-center w-100">
+    <div class="jumbotron text-center">
+      <h1 class="text-white" style="font-size: 100px; letter-spacing: 0.3em; padding-bottom: 0;">Queena</h1>
+      <hr style="color: white; width: 100%;height: 3px; opacity: 100%; padding: 0; margin:0;">
+      <hr style="color: lightgray; width: 100%;height: 2px; opacity: 70%; padding: 0; margin:0;">
+      <p style="color: white; font-weight: 500; letter-spacing: 0.1em;">Programmer | Tech enthusiast | Game Creator</p>
+      <section id="scroll-down">
+        <a href="#section-About"><span></span></a>
+      </section>
     </div>
-    <!-- END OF COVER -->
-    
+  </div>
+</div>
+<!-- END OF COVER -->
 
-    <!-- About -->
-    <div id="section-About" class="container-fluid bg-dark" style="padding: 1.5em 1.5em 3em 1.5em;">
-      <div class="text-center section-heading-div">
-        <h1 style="color:white;" class="section-heading">ABOUT</h1>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <img class="card-img-top" src="{{url_for('static', filename='Images/jinx.jpg')}}" alt="Card image cap">
-          </div>        
-          <div class="col-8 d-flex align-item-stretch">
-            <div class="card bg-light rounded border-secondary">
-              <div class="card-body">
-                <h3 class="card-title">Hi, I'm Queena.</h3>
-                <p></p>
-                <p class="card-text lead" style="font-weight: 350; font-family: Open_sans;">
-                  I am a Sixth Form student studying in England and I am an aspiring Mathematics and Computer Science Student.
-                  </br>
-                  </br>
-                  I am experienced with Python, c++ and java. I have also built several Flask applications using html, javascript and 
-                  css in previous projects, which you can by clicking the button below.
 
-                </p>
-                <a href="#section-Portfolio" class="btn btn-primary" style="background-color: grey;">Check out my portfolio!</a>
-              </div>
-            </div>
-          </div>        
-        </div>
-      </div>
-    </div>
-    <!-- END OF ABOUT -->
-    
-    <!-- PORTFOLIO -->
-    <div class="container-fluid bg-light" style="padding-top: 1.5em; padding-bottom: 3em;">
-      <div class="text-center section-heading-div" >
-        <h1 id="section-Portfolio" style="color:black" class="section-heading">PORTFOLIO</h1>
-      </div>
-      <div class="container d-flex justify-content-center">
-        <div class="row" style="width: 960px;">
-          <div class="col-4" style="height: 300px;">
-            <a href="/portfolio#section-game">
-              <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
-              style="background-image: url('static//Images/games_icon.jpg');">
-                <span class="portfolio-link-name">Games</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-4">
-            <a href="/portfolio#section-app">
-              <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
-              style="background-image: url('static/Images/apps_icon.jpg');">
-                <span class="portfolio-link-name">Applications</span>
-              </div>
-            </a>            
-          </div>
-          <div class="col-4">
-            <a href="/portfolio#section-website">
-              <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
-              style="background-image: url('static//Images/websites_icon.jpg');">
-                <span class="portfolio-link-name">Websites</span>
-              </div>
-            </a>  
+<!-- About -->
+<div id="section-About" class="container-fluid bg-dark" style="padding: 1.5em 1.5em 3em 1.5em;">
+  <div class="text-center section-heading-div">
+    <h1 style="color:white;" class="section-heading">ABOUT</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <img class="card-img-top" src="{{url_for('static', filename='Images/jinx.jpg')}}" alt="Card image cap">
+      </div>        
+      <div class="col-8 d-flex align-item-stretch">
+        <div class="card bg-light rounded border-secondary">
+          <div class="card-body">
+            <h3 class="card-title">Hi, I'm Queena.</h3>
+            <p></p>
+            <p class="card-text lead" style="font-weight: 350; font-family: Open_sans;">
+              I am a Sixth Form student studying in England and I am an aspiring Mathematics and Computer Science Student.
+              </br>
+              </br>
+              I am experienced with Python, c++ and java. I have also built several Flask applications using html, javascript and 
+              css in previous projects, which you can by clicking the button below.
+
+            </p>
+            <a href="#section-Portfolio" class="btn btn-primary" style="background-color: grey;">Check out my portfolio!</a>
           </div>
         </div>
+      </div>        
+    </div>
+  </div>
+</div>
+<!-- END OF ABOUT -->
+
+<!-- PORTFOLIO -->
+<div class="container-fluid bg-light" style="padding-top: 1.5em; padding-bottom: 3em;">
+  <div class="text-center section-heading-div" >
+    <h1 id="section-Portfolio" style="color:black" class="section-heading">PORTFOLIO</h1>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <div class="row" style="width: 960px;">
+      <div class="col-4" style="height: 300px;">
+        <a href="/portfolio#section-game">
+          <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
+          style="background-image: url('static//Images/games_icon.jpg');">
+            <span class="portfolio-link-name">Games</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="/portfolio#section-app">
+          <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
+          style="background-image: url('static/Images/apps_icon.jpg');">
+            <span class="portfolio-link-name">Applications</span>
+          </div>
+        </a>            
+      </div>
+      <div class="col-4">
+        <a href="/portfolio#section-website">
+          <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
+          style="background-image: url('static//Images/websites_icon.jpg');">
+            <span class="portfolio-link-name">Websites</span>
+          </div>
+        </a>  
       </div>
     </div>
-
-    <!-- CONTACT -->
-    <div class="container-fluid bg-dark d-flex justify-content-center" id="section-Contact" style="padding-left:15%; padding-right: 15%; padding-top: 1.5em;">
-      <div class="row" style="height: 0; width: 30%; padding-bottom: 6%;">
-        <div class="col col-sm d-flex justify-content-center">
-          <a href="https://www.facebook.com/profile.php?id=100008825226788" target="_blank">
-            <img class="card-img-top" src="{{url_for('static', filename='Images/facebook_icon.png')}}" alt="facebook-icon">
-          </a>
-        </div>
-        <div class="col col-sm d-flex justify-content-center">
-          <a href="https://www.instagram.com/_queen.wcy_" target="_blank">
-            <img class="card-img-top" src="{{url_for('static', filename='Images/instagram_icon.png')}}" alt="instagram-icon">
-          </a>
-        </div>
-        <div class="col col-sm d-flex justify-content-center">
-          <a href="http://linkedin.com/in/queena-wong-5619361a3" target="_blank">
-            <img class="card-img-top" src="{{url_for('static', filename='Images/linkedin_icon.png')}}" alt="linkedin_icon">
-          </a>
-        </div>
-        <div class="col col-sm d-flex justify-content-center">
-          <a href="mailto:wongq9999@outlook.com" target="_blank">
-            <img class="card-img-top" src="{{url_for('static', filename='Images/outlook_icon.png')}}" alt="outlook-icon">
-          </a>
-        </div>
-        <div class="col col-sm d-flex justify-content-center">
-          <a href="https://github.com/imcoolthx" target="_blank">
-            <img class="card-img-top" src="{{url_for('static', filename='Images/github_icon.png')}}" alt="github-icon">
-          </a>
-        </div>
-      </div>
-    </div>   
-
-    <!-- END OF CONTACT -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="{{ url_for('static', filename='/js/scroll-down.js')}}" type="text/javascript"></script>
-
-  </body>
-</html>
+  </div>
+</div>
+{% endblock %}
+  
