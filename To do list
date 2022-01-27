@@ -1,6 +1,4 @@
 To Do List:
-- Add base template which includes navbar and footer
-- Change home.html amd portfolio.html to use templates
 - Change database to include >1 photos for each projects
 - favicon??
 - Fix portfolio drop down fonts

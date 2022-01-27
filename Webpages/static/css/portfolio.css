@@ -1,36 +1,3 @@
-/* NAVBAR */
-.nav-link-heading{
-    font-weight: 700;
-    font-size: large;
-    margin-left: 18px;
-    margin-right: 18px;
-    letter-spacing: 0.05em;
-}
-
-.dropdown-item-heading{
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    font-size: medium;
-    text-align: right;
-}
-
-.nav-bar-name{
-    font-family: Millenia;
-    margin-left:15px; 
-    font-size: xx-large;
-    font-weight: 1000;
-    letter-spacing: 0.05em;
-}
-
-.dropdown:hover > .dropdown-menu {
-    display: block;
-}
-.dropdown > .dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
-
-
 /* EACH CONTAINER */
 .outmost-container{
     height: 100vh;
@@ -92,41 +59,20 @@
 }
 
 /* Cards */
-.row{
+.container-for-cards .row{
     width: 100%;
     padding: 1em;
 }
 
-.card{
+.container-for-cards .card{
     border-radius: 1em;
     width: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(180,179,179,1) 100%);
 }
 
-.project-name{
+.container-for-cards .project-name{
     font-family: Poppins;
     font-weight: bold;
 }
 
-/* FONTS */
-@font-face {
-    font-family: Open_sans;
-    src: url("../Fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf");
-}
-@font-face {
-    font-family: Open_sans_condensed;
-    src: url("../Fonts/Open_Sans/static/OpenSans_Condensed/OpenSans_Condensed-Medium.ttf");
-}
-@font-face {
-    font-family: Arvo;
-    src: url("../Fonts/Arvo/Arvo-Bold.ttf");
-}
-@font-face {
-    font-family: Millenia;
-    src: url("../Fonts/Millenia-Font/MilleniaPersonalUse-w1OB8.ttf");
-}
-@font-face {
-    font-family: Poppins;
-    src: url("../Fonts/Poppins/Poppins-Medium.ttf");
-}

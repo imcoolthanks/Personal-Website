@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>{% block title %}{% endblock %}</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css')}}">
     {% block head %}{% endblock %}
+
   </head>
   <body>
 
@@ -17,7 +19,7 @@
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="padding-bottom: 0;">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand nav-bar-name" href="#">&lt;queen/&gt;</a>
+          <span class="navbar-brand nav-bar-name">&lt;queen/&gt;</span>
         </div>
 
         <ul class="nav navbar-nav nav-right mr-auto">
