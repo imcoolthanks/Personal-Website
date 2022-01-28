@@ -18,7 +18,7 @@ Queena's Projects
     {% for gameRow in gameRows %}
     <div class="row justify-content-md-center">
       <div class="col-4 d-flex" style="align-items: center;">
-        <div id="carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="../static/Images/portfolio/alarm_clock.png" alt="First slide">
@@ -30,14 +30,14 @@ Queena's Projects
               <img class="d-block w-100" src="../static/Images/portfolio/pizza_run.png" alt="Third slide">
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" role="button" data-slide="prev">
+          <button class="carousel-control-prev" data-bs-target="#carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" type="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" type="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>           
       </div>        
       <div class="col-8 d-flex align-item-stretch">
@@ -70,7 +70,7 @@ Queena's Projects
       {% for appRow in appRows %}
       <div class="row justify-content-md-center">
         <div class="col-4 d-flex" style="align-items: center;">
-          <div id="carouselExampleControls{{appRow['name'] | replace(' ', '') }}" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls{{appRow['name'] | replace(' ', '') }}" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="../static/Images/portfolio/alarm_clock.png" alt="First slide">
@@ -82,14 +82,14 @@ Queena's Projects
                 <img class="d-block w-100" src="../static/Images/portfolio/pizza_run.png" alt="Third slide">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls{{appRow['name'] | replace(' ', '') }}" role="button" data-slide="prev">
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleControls{{appRow['name'] | replace(' ', '') }}" type="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls{{appRow['name'] | replace(' ', '') }}" role="button" data-slide="next">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselExampleControls{{appRow['name'] | replace(' ', '') }}" type="button" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>           
         </div>        
         <div class="col-8 d-flex align-item-stretch">
@@ -122,7 +122,7 @@ Queena's Projects
 
         <div class="row justify-content-md-center">
           <div class="col-4 d-flex" style="align-items: center;">
-            <div id="carouselExampleControls{{websiteRow['name'] | replace(' ', '') }}" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleControls{{websiteRow['name'] | replace(' ', '') }}" class="carousel slide carousel-fade" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img class="d-block w-100" src="../static/Images/portfolio/alarm_clock.png" alt="First slide">
@@ -134,14 +134,14 @@ Queena's Projects
                   <img class="d-block w-100" src="../static/Images/portfolio/pizza_run.png" alt="Third slide">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls{{websiteRow['name'] | replace(' ', '') }}" role="button" data-slide="prev">
+              <button class="carousel-control-prev" data-bs-target="#carouselExampleControls{{websiteRow['name'] | replace(' ', '') }}" type="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls{{websiteRow['name'] | replace(' ', '') }}" role="button" data-slide="next">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" data-bs-target="#carouselExampleControls{{websiteRow['name'] | replace(' ', '') }}" type="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>           
           </div>        
           <div class="col-8 d-flex align-item-stretch">
