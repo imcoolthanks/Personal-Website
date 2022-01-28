@@ -42,6 +42,10 @@
     pointer-events: none;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+}
+
 /* FONTS */
 @font-face {
     font-family: Open_sans;
