@@ -15,6 +15,13 @@
     letter-spacing: 0.05em;
 }
 
+.dropdown-item{
+    font-weight: 700;
+    font-size: medium;
+    letter-spacing: 0.05em;
+    color: rgba(0,0,0,.55);
+}
+
 .dropdown-item-heading{
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -24,6 +31,10 @@
 
 .dropdown:hover > .dropdown-menu {
     display: block;
+}
+
+.dropdown:hover .nav-link-heading{
+    color: rgba(0,0,0,.7);
 }
 
 .dropdown > .dropdown-toggle:active {
