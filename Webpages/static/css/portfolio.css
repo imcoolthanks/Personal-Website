@@ -6,15 +6,15 @@
 }
 
 #section-game{
-    background-image: url("../Images/games_icon.jpg");
+    background-image: url("../Images/portfolio/background/games_section_bg.jpg");
 }
 
 #section-app{
-    background-image: url("../Images/apps_icon.jpg");
+    background-image: url("../Images/portfolio/background/apps_section_bg.jpg");
 }
 
 #section-website{
-    background-image: url("../Images/websites_icon.jpg");
+    background-image: url("../Images/portfolio/background/websites_section_bg.jpg");
 }
 
 .section-heading{
