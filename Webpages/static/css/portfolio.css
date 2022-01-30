@@ -31,6 +31,11 @@
 
 /* STYLE FOR EACH CARD */
 /*Carousel */
+.carousel {
+    display: flex;
+    max-height: 256px;
+}
+
 .sr-only{ 
     position: absolute;
     width: 1px;
@@ -51,9 +56,22 @@
 }
 
 .carousel-inner{
-    padding: 1.5em;   
+    padding: 1.5em; 
+    align-content: center;
 }
 
+.carousel div{
+    display: flex;
+}
+
+.carousel-item{
+    background-color: black;
+}
+
+.carousel-inner img {
+    object-fit: contain;
+    max-height: 100%;
+}
 
 /* Cards */
 .container-for-cards .row{

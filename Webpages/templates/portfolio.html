@@ -18,7 +18,7 @@ Queena's Projects
     {% for gameRow in gameRows %}
     <div class="row justify-content-md-center">
       <div class="col-4 d-flex" style="align-items: center;">
-        <div id="carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleControls{{gameRow['name'] | replace(' ', '') }}" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="../static/Images/portfolio/{{gameRow['name'] | replace(' ', '') }}/1.png" alt="First slide">
