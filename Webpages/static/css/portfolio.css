@@ -1,6 +1,6 @@
 /* EACH CONTAINER */
 .outmost-container{
-    height: 100vh;
+    min-height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,11 +29,62 @@
     padding-bottom: 2em;
 }
 
+/* MODAL TRIGGER */
+.modal-trigger-button {
+    width: 100%;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+}
+
+.modal-trigger-button img {
+    opacity: 100%;
+
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+.modal-trigger-button .button-content {
+    opacity: 0%;
+    position: absolute;
+    left: 29%;
+    top: 65%;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+.modal-trigger-button:hover .button-content {
+    opacity: 100%;
+    top:45%;
+}
+
+.modal-trigger-button:hover img {
+    filter: brightness(50%);
+}
+
+/* ACTUAL MODAL */
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-title {
+    text-align: center;
+    width: 100%;
+    font-family: Poppins;
+}
+
+.modal-body {
+    padding: 0;
+}
+
 /* STYLE FOR EACH CARD */
 /*Carousel */
 .carousel {
     display: flex;
-    max-height: 256px;
+    max-height: 500px;
 }
 
 .sr-only{ 
@@ -45,14 +96,6 @@
     clip: rect(0,0,0,0);
     white-space: nowrap;
     border: 0;
-}
-
-.carousel-control-prev {
-    margin-left: -1.5em;
-  }
-  
-.carousel-control-next {
-    margin-right: -1.5em;
 }
 
 .carousel-inner{
