@@ -34,22 +34,23 @@ Queena's Portfolio
   <div class="container">
     <div class="row">
       <div class="col-4">
-        <img class="card-img-top" src="{{url_for('static', filename='Images/jinx.jpg')}}" alt="Card image cap">
+        <img class="card-img-top" src="{{url_for('static', filename='Images/home/personal.jpg')}}" alt="Card image cap">
       </div>        
       <div class="col-8 d-flex align-item-stretch">
         <div class="card bg-light rounded border-secondary">
           <div class="card-body">
             <h3 class="card-title">Hi, I'm Queena.</h3>
             <p></p>
-            <p class="card-text lead" style="font-weight: 350; font-family: Open_sans;">
+            <p class="card-text lead">
               I am a Sixth Form student studying in England and I am an aspiring Mathematics and Computer Science Student.
-              </br>
-              </br>
-              I am experienced with Python, c++ and java. I have also built several Flask applications using html, javascript and 
-              css in previous projects, which you can by clicking the button below.
-
+              I am experienced with Python, C++ and a bit of Java. I have also built several Flask applications using HTML, Javascript and 
+              CSS in previous projects.
+              <br>
+              <br>
+              Any enquiries, please do not hesitate to contact me through the buttons located in the footer below.
             </p>
-            <a href="#section-Portfolio" class="btn btn-primary" style="background-color: grey;">Check out my portfolio!</a>
+            <!-- HTML !-->
+            <a href="#section-Portfolio"><button class="button-48" role="button"><span class="text">Check out my portfolio!</span></button></a>
           </div>
         </div>
       </div>        
@@ -64,28 +65,36 @@ Queena's Portfolio
     <h1 id="section-Portfolio" style="color:black" class="section-heading">PORTFOLIO</h1>
   </div>
   <div class="container d-flex justify-content-center">
-    <div class="row" style="width: 960px;">
-      <div class="col-4" style="height: 300px;">
-        <a href="/portfolio#section-game">
+    <div class="row" style="width: 1280px;">
+      <div class="col-3" style="height: 300px;">
+        <a class="portfolio-link" href="/portfolio#section-game">
           <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
-          style="background-image: url('static//Images/games_icon.jpg');">
+          style="background-image: url('static//Images/home/icons/games_icon.jpg');">
             <span class="portfolio-link-name">Games</span>
           </div>
         </a>
       </div>
-      <div class="col-4">
-        <a href="/portfolio#section-app">
+      <div class="col-3">
+        <a class="portfolio-link" href="/portfolio#section-app">
           <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
-          style="background-image: url('static/Images/apps_icon.jpg');">
+          style="background-image: url('static/Images/home/icons/apps_icon.jpg');">
             <span class="portfolio-link-name">Applications</span>
           </div>
         </a>            
       </div>
-      <div class="col-4">
-        <a href="/portfolio#section-website">
+      <div class="col-3">
+        <a class="portfolio-link" href="/portfolio#section-website">
           <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
-          style="background-image: url('static//Images/websites_icon.jpg');">
+          style="background-image: url('static//Images/home/icons/websites_icon.jpg');">
             <span class="portfolio-link-name">Websites</span>
+          </div>
+        </a>  
+      </div>
+      <div class="col-3">
+        <a class="portfolio-link" href="/portfolio#section-hackathon">
+          <div class="home-portfolio-card w-100 h-100 d-flex justify-content-center"
+          style="background-image: url('static//Images/home/icons/hackathons_icon.jpg');">
+            <span class="portfolio-link-name">Hackathons</span>
           </div>
         </a>  
       </div>

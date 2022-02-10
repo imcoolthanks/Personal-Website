@@ -11,8 +11,8 @@ def home():
 
 @app.route("/portfolio")
 def portfolio():
-    if os.path.isfile("portfolio.db"):
-        con = sqlite3.connect("portfolio.db")
+    if os.path.isfile("database.db"):
+        con = sqlite3.connect("database.db")
 
     con.row_factory = sqlite3.Row
 
@@ -46,6 +46,9 @@ def portfolio():
     cur.execute(query, ("website",))
     websiteRows = cur.fetchall()
 
+    cur.execute(query, ("hackathon",))
+    hackathonRows = cur.fetchall()
+
     cur.close()
 
-    return render_template('portfolio.html', gameRows=gameRows, appRows=appRows, websiteRows=websiteRows)
+    return render_template('portfolio.html', gameRows=gameRows, appRows=appRows, websiteRows=websiteRows, hackathonRows=hackathonRows)
