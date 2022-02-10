@@ -105,18 +105,19 @@ html {
 }
 
 .portfolio-link-name:hover{
-    color:rgb(180, 180, 180);
+    color:rgb(224, 224, 224);
     opacity: 80%;
 }
 
 .card-body {
     background-color: #f4f4f4;
     font-family: Open_sans;
+    font-size: 1.2rem;
+    line-height: 1.7;
 }
 
 .card-text {
     font-weight: 350;
-    font-size: 1.15rem;
 }
 
 
@@ -148,13 +149,13 @@ html {
     touch-action: manipulation;
     vertical-align: baseline;
     white-space: nowrap;
-    bottom: -20px;
+    bottom: -10px;
   }
   
   .button-48:before {
     animation: opacityFallbackOut .5s step-end forwards;
     backface-visibility: hidden;
-    background-color: #EBEBEB;
+    background-color: #DBDFECD1;
     clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
     content: "";
     height: 100%;
